@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(194, 188, 188);
+    /* width: 270px; */
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+.sidebar nav li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 87vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    /* background-color: rgb(16, 249, 20); */
+    height: 55vh;
+    width: 80vw;
+    margin: 147px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devpic img {
+    /* width: 386px; */
+    height: 55vh;
+}
+
+.devinfo {
+    /* padding-top: 35vh; */
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Reddit Mono", monospace;
+}
+
+.hello {
+    font-size: 48px;
+}
+
+.name {
+    font-size: 37px;
+    font-weight: bolder;
+    font-family: "Roboto Slab", serif;
+}
+
+.about {
+    font-size: 22px;
+}
+.moreabout{
+    margin-top: 20px;
+    font-size: 12px;
+    /* font-family: "Roboto Slab", serif; */
+
+}
+
+.btn {
+    margin-top: 35px;
+    margin-top: 35px;
+  border: 1px solid;
+  border-radius: 34px;
+  padding: 9px 14px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  /* margin: 0 3px; */
+  cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+.contactform{
+    padding: 0 34px;
+    padding-top: 144px;
+
+}
+
+.contactform  form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform  form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+#emailHelp {
+    color: rgb(27, 27, 97);
+  font-size: 10px;
+  padding-left: 7px;
+  padding-top: 5px;
+}
+.form-check-input{
+    flex-direction: row;
+}
+.blogitem{
+    padding: 21px 0;
+    text-align: center;
+}
+.blogcontainer{
+    text-align: center;
+}
+.intro h1,h2{
+    margin: 20px;
+}
+.intro p{
+    margin: 20px;
+}
+.intro{
+    margin: 0 88px;
+}
+.myskillcontainer{
+    padding: 12px;
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+    margin: 0 88px;
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    margin: 0 88px;
+}
+.hundred{
+    width: 250px;
+    background-color: red;
+}
+.fifty{
+    width: 125px;
+    background-color: aqua;
+}
+.t5{
+    width: 75px;
+    background-color: yellow;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+    margin-left: 178px;
+}
+.sidebargo{
+    transform: translate(-443px, 0px);
+        position: absolute;
+
+}
+@media (max-width:1245px ) {
+    /* .sidebar{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+    .devpic{
+        display: none;
+    }
+    .intro, .blogcontainer, .contactform{
+        margin: 8px;
+    }
+}
